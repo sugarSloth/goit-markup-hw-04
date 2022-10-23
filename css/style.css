@@ -1,0 +1,233 @@
+:root{
+    --blue: #2196F3;
+    --white: #FFFFFF;
+    --black: rgba(0, 0, 0, 1);
+    --grey: #212121;
+    --lightGrey: #757575;
+}
+.body{
+    background: var(--white);
+    font-family: 'Roboto';
+}
+
+
+/*Без підкреслення*/
+.link {
+    text-decoration: none;
+}
+
+/*Мінус маркування*/
+.no-marker{
+    list-style-type: none;
+
+}
+
+/*Логотип*/
+.web {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+}
+
+/*Блакитна частина логотипу*/
+.web-mod {
+    color: var(--blue);
+}
+
+/*Чорна частина логотипу*/
+.web-mod-bl {
+    color: var(--black);
+}
+
+/*Біла частина логотипу*/
+.web-mod-wh {
+    color: rgba(255, 255, 255, 1);
+}
+
+/*Хедер списки*/
+.header-ul {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: var(--grey);
+}
+
+/*Хедер студія*/
+.header-ul-studio-email {
+    color: var(--blue);
+}
+
+
+.header-ul-tel {
+    color: var(--lightGrey);
+}
+
+.section-gray {
+    background: #2F303A;
+}
+/* Ефективні рішення для вашого бізнесу */
+.desigions {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white);
+}
+/* Кнопка */
+.button-blue {
+    background: var(--blue);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+/* Замовити послугу */
+.button-text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: var(--white);
+}
+
+
+
+
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.qualities{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--grey);
+}
+
+.qualities-text{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--lightGrey);
+}
+
+.h2-title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--grey);
+}
+
+.team-background{
+    background: #F5F4FA;
+}
+
+.team{
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.names-team{
+    font-weight: 500;
+    color: var(--grey);
+}
+
+.position-team{
+    font-weight: 400;
+    color: var(--lightGrey);
+}
+
+.footer-all{
+    background: #2F303A;
+}
+
+.footer-ul{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+}
+
+.footer-ul-adress{
+    color: var(--white);
+}
+
+.footer-ul-email-tel{
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
+
+
+.buttons-portfolio{
+    background: #F5F4FA;
+    border-radius: 4px;
+}
+
+.buttons-portfolio:focus{
+    background: var(--blue);
+}
+
+.buttons-portfolio:hover {
+    background: var(--blue);
+}
+
+
+.buttons-text{
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.h3-portfolio{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    color: var(--grey);
+}
+
+.p-portfolio{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: var(--lightGrey);
+}
