@@ -1,3 +1,10 @@
+/**/
+body {
+    font-family: 'Roboto';
+    font-size: 14px;
+    color: var(--grey);
+    background: var(--white);
+}
 
 /*Змінні з кольорами*/
 :root{
@@ -59,7 +66,7 @@
 /*Хедер списки*/
 .nav-item {
     font-weight: 500;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
 }
 
@@ -68,7 +75,7 @@
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1.192;
     letter-spacing: 0.03em;
 }
 
@@ -81,7 +88,7 @@
 .hero-title {
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
+    line-height: 1.364;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -92,6 +99,10 @@
     background: var(--blue);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+}
+
+.button:focus, .button:hover{
+    cursor: pointer;
 }
 
 /* Замовити послугу */
@@ -121,15 +132,15 @@
 
 /*Заголовки якості*/
 .qualities-title {
-    font-weight: 700;
-    line-height: 16px;
+    font-size: 14px;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
 
 /*Текст якості*/
 .qualities-text{
-    line-height: 24px;
+    line-height: 1.714;
     letter-spacing: 0.03em;
     color: var(--lightGrey);
 }
@@ -138,7 +149,7 @@
 .section-title{
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.167;
     text-align: center;
     letter-spacing: 0.03em;
 }
@@ -175,7 +186,7 @@
 /*Адреса імейл телефон футер*/
 .footer-item{
     font-style: normal;
-    line-height: 24px;
+    line-height: 1.714;
     letter-spacing: 0.03em;
 }
 
