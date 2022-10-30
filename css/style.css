@@ -72,6 +72,7 @@ img {
 .nav-list{
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 /*Приховані заголовки*/
@@ -103,9 +104,15 @@ img {
     line-height: 1.192;
     letter-spacing: 0.03em;
     width: 145px;
+    margin-right: 93px;
 }
 
-/*ФлексБокс Хедер*/
+/*Логотип хедер паддінги*/
+.logo-header{
+    padding: 24px 0;
+}
+
+/*ФлексБокс хедер*/
 .flexbox-header {
     display: flex;
     flex-direction: row;
@@ -115,16 +122,14 @@ img {
     margin: 0;
 }
 
-.logo-margin {
-    margin-left: 93px;
-}
-
+/*Рамка хедер*/
 .header {
     border: 1px solid #ECECEC;
 }
 
-.header-vidstup {
-    padding: 32px 0;
+/*Відступ між сторінками і контактами хедер*/
+.indentation-ul-header {
+    margin-right: 344px;
 }
 
 /* HERO */
@@ -203,7 +208,7 @@ img {
 /*Наша команда секція*/
 .section-team{
     background: var(--darkerWhite);
-    padding-top: 94px;
+    padding: 94px 0;
 }
 
 /*Наша команда текст загальний*/
@@ -217,6 +222,8 @@ img {
 /*Наша команда фон карток*/
 .team-color {
     background-color: var(--white);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 /*Імена команди*/
@@ -306,7 +313,7 @@ img {
     display: flex;
     flex-direction: column;
     align-content: center;
-
+    padding-left: 13%;
 }
 
 /*Адреса імейл телефон футер*/
@@ -316,10 +323,19 @@ img {
     letter-spacing: 0.03em;
 }
 
+/*Відступи адреса імейл телефон футер*/
+.footer-indentation-item {
+    margin-top: 9px;
+}
+
+/*Відступ логотип футер*/
+.footer-indentation-logo {
+    margin-bottom: 20px;
+}
+
 /*Секції*/
 .section{
     margin-top: 94px;
-    margin-bottom: 94px;
 }
 
 /* flexbox списки main*/
@@ -329,11 +345,6 @@ img {
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
-}
-
-/*Відступ між сторінками і контактами*/
-.vidstup{
-    margin-right: 344px;
 }
 
 /*Відступ 50*/
