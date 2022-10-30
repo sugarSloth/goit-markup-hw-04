@@ -1,14 +1,7 @@
-/**/
-body {
-    font-family: 'Roboto';
-    font-size: 14px;
-    color: var(--grey);
-    background: var(--white);
-}
 
 /*Змінні з кольорами*/
 :root{
-    --blue: #2196F3;
+    --contrast: #2196F3;
     --white: #FFFFFF;
     --darkerWhite: #F5F4FA;
     --black: rgba(0, 0, 0, 1);
@@ -18,24 +11,9 @@ body {
     --weirdGrey: rgba(255, 255, 255, 0.6);
 }
 
-/*Лінки без підкреслення*/
-.link {
-    text-decoration: none;
-}
-
-/*Лінки при наведенні стають блакитними*/
-.link:hover, .link:focus {
-    color: var(--blue);
-}
-
-/*Мінус маркування*/
-.nav-list{
-    list-style-type: none;
-}
-
-/*Блакитний колір*/
-.blue {
-    color: var(--blue);
+/*Блакитний колір контраст*/
+.contrast {
+    color: var(--contrast);
 }
 
 /*Світлий сірий колір*/
@@ -63,57 +41,37 @@ body {
     color: var(--white);
 }
 
-/*Хедер списки*/
-.nav-item {
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-}
-
-/*Логотип*/
-.logo {
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.192;
-    letter-spacing: 0.03em;
-}
-
-/*Сіра частина з кнопкою колір*/
-.hero {
-    background: var(--backGrey);
-}
-
-/* Ефективні рішення для вашого бізнесу */
-.hero-title {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.364;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-}
-
-/* Кнопка */
-.button {
-    background: var(--blue);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-}
-
-.button:focus, .button:hover{
-    cursor: pointer;
-}
-
-/* Замовити послугу */
-.button-text {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.865;
+/* Загальні стилі */
+body {
+    font-family: 'Roboto';
+    font-size: 14px;
+    color: var(--grey);
+    background: var(--white);
     display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
+    flex-direction: column;
+    align-content: center;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/*Лінки без підкреслення*/
+.link {
+    text-decoration: none;
+}
+
+/*Лінки при наведенні стають блакитними*/
+.link:hover, .link:focus {
+    color: var(--contrast);
+}
+
+/*Мінус маркування списків*/
+.nav-list{
+    list-style-type: none;
+    padding: 0;
 }
 
 /*Приховані заголовки*/
@@ -128,6 +86,88 @@ body {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
+}
+
+/*Хедер списки*/
+.nav-item {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+/*Логотип*/
+.logo {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.192;
+    letter-spacing: 0.03em;
+    width: 145px;
+}
+
+/*ФлексБокс Хедер*/
+.flexbox-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.logo-margin {
+    margin-left: 93px;
+}
+
+.header {
+    border: 1px solid #ECECEC;
+}
+
+.header-vidstup {
+    padding: 32px 0;
+}
+
+/* HERO */
+.hero {
+    background: var(--backGrey);
+    padding: 200px 0;
+    text-align: center;
+}
+
+/* Ефективні рішення для вашого бізнесу */
+.hero-title {
+    margin: 0;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.364;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    -webkit-text-stroke: 1px #000000;
+}
+
+/* Кнопка */
+.button {
+    margin: 0 auto;
+    background: var(--contrast);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 10px 32px;
+    margin-top: 30px;
+    border: 0;
+}
+
+.button:focus, .button:hover{
+    cursor: pointer;
+}
+
+/* Замовити послугу */
+.button-text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.865;
+    text-align: center;
+    letter-spacing: 0.06em;
 }
 
 /*Заголовки якості*/
@@ -145,6 +185,11 @@ body {
     color: var(--lightGrey);
 }
 
+/*Розміри якості*/
+.qualities-dimensions{
+    width: 270px;
+}
+
 /*Заголовки секцій*/
 .section-title{
     font-weight: 700;
@@ -152,11 +197,13 @@ body {
     line-height: 1.167;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
 }
 
 /*Наша команда секція*/
 .section-team{
     background: var(--darkerWhite);
+    padding-top: 94px;
 }
 
 /*Наша команда текст загальний*/
@@ -165,6 +212,11 @@ body {
     line-height: 1.1875;
     text-align: center;
     letter-spacing: 0.03em;
+}
+
+/*Наша команда фон карток*/
+.team-color {
+    background-color: var(--white);
 }
 
 /*Імена команди*/
@@ -178,38 +230,35 @@ body {
     color: var(--lightGrey);
 }
 
-/*Футер*/
-.footer{
-    background: var(--backGrey);
-}
-
-/*Адреса імейл телефон футер*/
-.footer-item{
-    font-style: normal;
-    line-height: 1.714;
-    letter-spacing: 0.03em;
-}
-
 /*Кнопки в портфоліо фільтри*/
 .buttons-portfolio{
     background: var(--darkerWhite);
     border-radius: 4px;
     font-family: inherit;
+    border: 0;
+    padding: 6px 22px;
 }
 
 /*Кнопки в портфоліо фільтри при наведенні*/
 .buttons-portfolio:focus, .buttons-portfolio:hover{
-    background: var(--blue);
+    background: var(--contrast);
     color: var(--white);
     cursor: pointer;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /*Кнопки в портфоліо фільтри Текст*/
 .buttons-text{
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.625;
     text-align: center;
     letter-spacing: 0.03em;
+}
+
+/* Відступ для кнопок */
+.portfolio-indentation-button {
+    margin-bottom: 50px;
 }
 
 /*Заголовки портфоліо*/
@@ -219,12 +268,87 @@ body {
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--grey);
+    margin: 0;
 }
 
 /*Портфоліо тип*/
 .portfolio-type{
+    margin-top: 4px;
     font-size: 16px;
     line-height: 1.865;
     letter-spacing: 0.03em;
     color: var(--lightGrey);
 }
+
+/*Портфоліо список кнопок*/
+.portfolio-buttons {
+    padding-right: 8px;
+}
+
+/*Портфоліо список робіт*/
+.portfolio-list {
+    width: 370px;
+    height: 404px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #EEEEEE;
+}
+
+/* Відступи назви в портфоліо */
+.portfolio-indentation-text{
+    margin: 0;
+    padding: 20px 24px;
+}
+
+/*Футер*/
+.footer {
+    background: var(--backGrey);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+}
+
+/*Адреса імейл телефон футер*/
+.footer-item {
+    font-style: normal;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+}
+
+/*Секції*/
+.section{
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
+
+/* flexbox списки main*/
+.flexbox-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/*Відступ між сторінками і контактами*/
+.vidstup{
+    margin-right: 344px;
+}
+
+/*Відступ 50*/
+.vidstup-fifty{
+    margin-right: 50px;
+}
+
+/*Відступ 30*/
+.vidstup-thirty {
+    margin-right: 30px;
+}
+
+/*Відступ 60*/
+.vidstup-sixty {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
