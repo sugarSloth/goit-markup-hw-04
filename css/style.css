@@ -71,8 +71,8 @@ img {
 /*Мінус маркування списків*/
 .nav-list{
     list-style-type: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
 /*Приховані заголовки*/
@@ -89,11 +89,41 @@ img {
     margin: -1px;
 }
 
-/*Хедер списки*/
-.nav-item {
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+/*Рамка хедер*/
+.header {
+    border: 1px solid #ECECEC;
+}
+
+/*ФлексБокс*/
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.pages{
+    width: 281px;
+    margin-right: 344px;
+}
+
+/*Секції*/
+.section{
+    padding: 94px 0;
 }
 
 /*Логотип*/
@@ -107,24 +137,18 @@ img {
     margin-right: 93px;
 }
 
+/*Хедер списки*/
+.nav-item {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+
+
 /*Логотип хедер паддінги*/
 .logo-header{
     padding: 24px 0;
-}
-
-/*ФлексБокс хедер*/
-.flexbox-header {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-}
-
-/*Рамка хедер*/
-.header {
-    border: 1px solid #ECECEC;
 }
 
 /*Відступ між сторінками і контактами хедер*/
@@ -141,7 +165,8 @@ img {
 
 /* Ефективні рішення для вашого бізнесу */
 .hero-title {
-    margin: 0;
+    width: 696px;
+    margin: 0 auto;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.364;
@@ -202,7 +227,15 @@ img {
     line-height: 1.167;
     text-align: center;
     letter-spacing: 0.03em;
-    margin-bottom: 50px;
+    margin-top: 0;
+}
+
+.section-margin{
+    margin-top: 50px;
+}
+
+.about{
+    padding-top: 0;
 }
 
 /*Наша команда секція*/
@@ -229,12 +262,17 @@ img {
 /*Імена команди*/
 .team-names{
     font-weight: 500;
+    margin-top: 0;
 }
 
 /*Посади команди*/
 .team-position{
-    font-weight: 400;
     color: var(--lightGrey);
+    margin-bottom: 0;
+}
+
+.team-padding{
+    padding: 30px 0;
 }
 
 /*Кнопки в портфоліо фільтри*/
@@ -281,6 +319,7 @@ img {
 /*Портфоліо тип*/
 .portfolio-type{
     margin-top: 4px;
+    margin-bottom: 0;
     font-size: 16px;
     line-height: 1.865;
     letter-spacing: 0.03em;
@@ -310,10 +349,15 @@ img {
 /*Футер*/
 .footer {
     background: var(--backGrey);
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    padding-left: 13%;
+    padding: 60px 0 60px 15%;
+}
+
+.container-footer{
+    margin-left: 0;
+}
+
+.footer-padding{
+    margin-top: 20px;;
 }
 
 /*Адреса імейл телефон футер*/
@@ -326,16 +370,6 @@ img {
 /*Відступи адреса імейл телефон футер*/
 .footer-indentation-item {
     margin-top: 9px;
-}
-
-/*Відступ логотип футер*/
-.footer-indentation-logo {
-    margin-bottom: 20px;
-}
-
-/*Секції*/
-.section{
-    margin-top: 94px;
 }
 
 /* flexbox списки main*/
@@ -356,10 +390,3 @@ img {
 .vidstup-thirty {
     margin-right: 30px;
 }
-
-/*Відступ 60*/
-.vidstup-sixty {
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-
