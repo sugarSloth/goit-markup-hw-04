@@ -94,31 +94,32 @@ img {
     border: 1px solid #ECECEC;
 }
 
-/*ФлексБокс*/
-
 .container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/*ФлексБокс*/
+.nav-container{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
-    margin: 0;
-    padding: 0;
 }
 
 .header-container {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin: 0;
-    padding: 0;
 }
 
 .pages{
     width: 281px;
     margin-right: 344px;
+}
+
+.adress{
+    width: 307px;
 }
 
 /*Секції*/
@@ -143,8 +144,6 @@ img {
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
-
-
 
 /*Логотип хедер паддінги*/
 .logo-header{
@@ -301,8 +300,16 @@ img {
     letter-spacing: 0.03em;
 }
 
+/* flexbox списки main*/
+.flexbox-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 /* Відступ для кнопок */
 .portfolio-indentation-button {
+    width: 575px;
     margin-bottom: 50px;
 }
 
@@ -326,11 +333,6 @@ img {
     color: var(--lightGrey);
 }
 
-/*Портфоліо список кнопок*/
-.portfolio-buttons {
-    padding-right: 8px;
-}
-
 /*Портфоліо список робіт*/
 .portfolio-list {
     width: 370px;
@@ -338,6 +340,13 @@ img {
     margin-right: 30px;
     margin-bottom: 30px;
     border: 1px solid #EEEEEE;
+}
+
+.portfolio-flex {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 /* Відступи назви в портфоліо */
@@ -349,11 +358,16 @@ img {
 /*Футер*/
 .footer {
     background: var(--backGrey);
-    padding: 60px 0 60px 15%;
+    padding: 60px 0;
 }
 
 .container-footer{
     margin-left: 0;
+}
+
+/*Логотип футер паддінги*/
+.logo-footer {
+    margin: 0;
 }
 
 .footer-padding{
@@ -370,15 +384,6 @@ img {
 /*Відступи адреса імейл телефон футер*/
 .footer-indentation-item {
     margin-top: 9px;
-}
-
-/* flexbox списки main*/
-.flexbox-list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
 }
 
 /*Відступ 50*/
