@@ -63,7 +63,6 @@ img {
     text-decoration: none;
 }
 
-/*Лінки при наведенні стають блакитними*/
 .link:hover, .link:focus {
     color: var(--contrast);
 }
@@ -94,18 +93,20 @@ img {
     border: 1px solid #ECECEC;
 }
 
+/* Всі контейнери */
 .container {
     width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
 }
 
-/*ФлексБокс*/
+/*ФлексБокс Хедер для лого і списку сторінок*/
 .nav-container{
     display: flex;
     align-items: center;
 }
 
+/* ФлексБокс Хедер для загального div і списків */
 .header-container {
     display: flex;
     flex-wrap: wrap;
@@ -113,13 +114,15 @@ img {
     align-items: center;
 }
 
+/* Розміри для списку сторінок в Хедері */
 .pages{
     width: 281px;
-    margin-right: 344px;
+    margin-right: 318px;
 }
 
+/* Розміри для мейла і телефона в Хедері */
 .adress{
-    width: 307px;
+    width: 333px;
 }
 
 /*Секції*/
@@ -127,7 +130,7 @@ img {
     padding: 94px 0;
 }
 
-/*Логотип*/
+/*Логотип загальне Хедер і Футер*/
 .logo {
     font-family: 'Raleway';
     font-weight: 700;
@@ -155,14 +158,31 @@ img {
     margin-right: 344px;
 }
 
-/* HERO */
-.hero {
-    background: var(--backGrey);
-    padding: 200px 0;
-    text-align: center;
+/* Хедер іконки заливка кольору тексту */
+.header_icons{
+    fill: currentColor;
 }
 
-/* Ефективні рішення для вашого бізнесу */
+/* Хедер вирівнювання іконок в ряд з текстом */
+.header-contacts{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* HERO загальне */
+.hero {
+    max-width: 1600px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 200px 0;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* Ефективні рішення для вашого бізнесу текст */
 .hero-title {
     width: 696px;
     margin: 0 auto;
@@ -190,7 +210,7 @@ img {
     cursor: pointer;
 }
 
-/* Замовити послугу */
+/* Замовити послугу текст на кнопці */
 .button-text {
     font-weight: 700;
     font-size: 16px;
@@ -199,7 +219,7 @@ img {
     letter-spacing: 0.06em;
 }
 
-/*Заголовки якості*/
+/*Заголовки h3 якості*/
 .qualities-title {
     font-size: 14px;
     line-height: 1.14;
@@ -207,19 +227,31 @@ img {
     text-transform: uppercase;
 }
 
-/*Текст якості*/
+/*Текст p якості*/
 .qualities-text{
     line-height: 1.714;
     letter-spacing: 0.03em;
     color: var(--lightGrey);
 }
 
-/*Розміри якості*/
+/*Розміри li якості*/
 .qualities-dimensions{
     width: 270px;
 }
 
-/*Заголовки секцій*/
+/* Прямокутники бекграунд іконок якості */
+.qualities-icons{
+    width: 270px;
+    height: 120px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+/*Заголовки h2 секцій*/
 .section-title{
     font-weight: 700;
     font-size: 36px;
@@ -229,21 +261,68 @@ img {
     margin-top: 0;
 }
 
+/* Відступ вниз від заголовків h2 */
 .section-margin{
     margin-top: 50px;
 }
 
+/* Скасування верхнього відступу для Чим ми займаємося щоб не накладалось */
 .about{
     padding-top: 0;
 }
 
-/*Наша команда секція*/
+/* Коробочка з іконками контактів Наша команда і Футер */
+.contacts{
+    margin: 0 auto;
+    width: 206px;
+    margin-top: 16px;
+}
+
+/* ФлексБокс для іконок контактів Наша команда і Футер */
+.contacts-ul{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: auto;
+}
+
+/* li з іконками контактів Наша команда */
+.contacts-items{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacts-items:focus,
+.contacts-items:hover {
+    background-color: var(--contrast);
+    cursor: pointer;
+}
+
+/* Заливка іконок Наша команда */
+.team-contact-item {
+    fill: #AFB1B8;
+}
+
+.team-contact-item:focus, .team-contact-item:hover{
+    fill: var(--white);
+}
+
+/* Заливка іконок Футер */
+.footer-contact-item{
+    fill: var(--white);
+}
+
+/*Наша команда секція загальне*/
 .section-team{
     background: var(--darkerWhite);
     padding: 94px 0;
 }
 
-/*Наша команда текст загальний*/
+/*Наша команда текст h3 p*/
 .team{
     font-size: 16px;
     line-height: 1.1875;
@@ -251,27 +330,61 @@ img {
     letter-spacing: 0.03em;
 }
 
-/*Наша команда фон карток*/
+/*Наша команда фон карток li*/
 .team-color {
     background-color: var(--white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
 
-/*Імена команди*/
+/*Імена команди h3*/
 .team-names{
     font-weight: 500;
     margin-top: 0;
 }
 
-/*Посади команди*/
+/*Посади команди p*/
 .team-position{
     color: var(--lightGrey);
     margin-bottom: 0;
 }
 
+/* Відступи для текстової частини карток Наша команда */
 .team-padding{
     padding: 30px 0;
+}
+
+/* Іконки Постійні клієнти */
+.permanent_items{
+    width: 170px;
+    height: 92px;    
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    fill: #AFB1B8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.permanent_items:focus, .permanent_items:hover{
+    border: 1px solid var(--contrast);
+    fill: var(--contrast);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+}
+
+/* Список іконок Постійні клієнти Флекс */
+.permanent_flex{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* flexbox списки main*/
+.flexbox-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 /*Кнопки в портфоліо фільтри*/
@@ -283,7 +396,6 @@ img {
     padding: 6px 22px;
 }
 
-/*Кнопки в портфоліо фільтри при наведенні*/
 .buttons-portfolio:focus, .buttons-portfolio:hover{
     background: var(--contrast);
     color: var(--white);
@@ -300,13 +412,6 @@ img {
     letter-spacing: 0.03em;
 }
 
-/* flexbox списки main*/
-.flexbox-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
 /* Відступ для кнопок */
 .portfolio-indentation-button {
     margin-bottom: 50px;
@@ -316,6 +421,7 @@ img {
     gap: 8px;
 }
 
+/* Портфоліо роботи ul */
 .project-list{
     display: flex;
     flex-wrap: wrap;
@@ -323,6 +429,17 @@ img {
     gap: 30px;
     padding: 0;
     margin: 0;
+}
+
+/*Портфоліо роботи li*/
+.portfolio-list {
+    flex-basis: calc((100% - 60px) / 3);
+    border: 1px solid #EEEEEE;
+}
+
+.portfolio-list:focus,
+.portfolio-list:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /*Заголовки портфоліо*/
@@ -344,19 +461,6 @@ img {
     color: var(--lightGrey);
 }
 
-/*Портфоліо список робіт*/
-.portfolio-list {
-    flex-basis: calc((100% - 60px) / 3);
-    border: 1px solid #EEEEEE;
-}
-
-.portfolio-flex {
-    width: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
 /* Відступи назви в портфоліо */
 .portfolio-indentation-text{
     margin: 0;
@@ -366,7 +470,13 @@ img {
 /*Футер*/
 .footer {
     background: var(--backGrey);
-    padding: 60px 0;
+    padding: 60px 0;    
+}
+
+/* Футер ФлексБокс */
+.footer-flex{
+    display: flex;
+    align-items: baseline;
 }
 
 /*Логотип футер паддінги*/
@@ -374,6 +484,18 @@ img {
     margin: 0;
 }
 
+/* Заголовок ПРИЄДНУЙТЕСЬ */
+.footer-title{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white);
+    margin: 0;
+}
+
+/* Відступ вниз від Лого */
 .footer-padding{
     margin-top: 20px;;
 }
@@ -390,12 +512,25 @@ img {
     margin-top: 9px;
 }
 
-/*Відступ 50*/
-.vidstup-fifty{
-    margin-right: 50px;
+/* Іконки футер коробочкай */
+.contacts-footer{
+    width: 206px;
+    margin-left: 70px;
 }
 
-/*Відступ 30*/
-.vidstup-thirty {
-    margin-right: 30px;
+/* Футер іконки li */
+.contacts-items-footer{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-top: 20px;
+}
+
+.contacts-items-footer:focus, .contacts-items-footer:hover{
+    background-color: var(--contrast);
+    cursor: pointer;
 }
