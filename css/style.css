@@ -1,4 +1,7 @@
-
+.h1, .h2, .h3, .h4, .h5, .h6, p{
+    margin: 0;
+    padding: 0;
+}
 /*Змінні з кольорами*/
 :root{
     --contrast: #2196F3;
@@ -225,6 +228,7 @@ img {
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin: 0 0 10px 0;
 }
 
 /*Текст p якості*/
@@ -241,7 +245,6 @@ img {
 
 /* Прямокутники бекграунд іконок якості */
 .qualities-icons{
-    width: 270px;
     height: 120px;
     background: #F5F4FA;
     border-radius: 4px;
@@ -258,7 +261,7 @@ img {
     line-height: 1.167;
     text-align: center;
     letter-spacing: 0.03em;
-    margin-top: 0;
+    margin: 0;
 }
 
 /* Відступ вниз від заголовків h2 */
@@ -271,45 +274,34 @@ img {
     padding-top: 0;
 }
 
-/* Коробочка з іконками контактів Наша команда і Футер */
-.contacts{
-    margin: 0 auto;
-    width: 206px;
-    margin-top: 16px;
-}
-
 /* ФлексБокс для іконок контактів Наша команда і Футер */
 .contacts-ul{
     display: flex;
-    align-items: center;
+    justify-content: center;
     gap: 10px;
-    margin: auto;
 }
 
 /* li з іконками контактів Наша команда */
 .contacts-items{
     width: 44px;
     height: 44px;
+}
+
+.contacts-link{
     border-radius: 50%;
-    display: flex;
+    fill: #AFB1B8;
     align-items: center;
+    display: flex;
     justify-content: center;
 }
 
-.contacts-items:focus,
-.contacts-items:hover {
+.contacts-link:focus,
+.contacts-link:hover {
     background-color: var(--contrast);
-    cursor: pointer;
-}
-
-/* Заливка іконок Наша команда */
-.team-contact-item {
-    fill: #AFB1B8;
-}
-
-.team-contact-item:focus, .team-contact-item:hover{
     fill: var(--white);
 }
+
+
 
 /* Заливка іконок Футер */
 .footer-contact-item{
@@ -346,7 +338,7 @@ img {
 /*Посади команди p*/
 .team-position{
     color: var(--lightGrey);
-    margin-bottom: 0;
+    margin-bottom: 16px;
 }
 
 /* Відступи для текстової частини карток Наша команда */
@@ -364,13 +356,13 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .permanent_items:focus, .permanent_items:hover{
     border: 1px solid var(--contrast);
     fill: var(--contrast);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    cursor: pointer;
 }
 
 /* Список іконок Постійні клієнти Флекс */
@@ -394,12 +386,12 @@ img {
     font-family: inherit;
     border: 0;
     padding: 6px 22px;
+    cursor: pointer;
 }
 
 .buttons-portfolio:focus, .buttons-portfolio:hover{
     background: var(--contrast);
     color: var(--white);
-    cursor: pointer;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
@@ -514,7 +506,6 @@ img {
 
 /* Іконки футер коробочкай */
 .contacts-footer{
-    width: 206px;
     margin-left: 70px;
 }
 
@@ -527,10 +518,10 @@ img {
     align-items: center;
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.1);
+    fill: var(--white);
     margin-top: 20px;
 }
 
 .contacts-items-footer:focus, .contacts-items-footer:hover{
     background-color: var(--contrast);
-    cursor: pointer;
 }
